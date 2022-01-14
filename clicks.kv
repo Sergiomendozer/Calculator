@@ -1,0 +1,111 @@
+StackLayoutExample:
+
+<StackLayoutExample>
+    padding: ("5dp", "5dp","5dp", "5dp")
+    spacing: "2dp", "3dp"
+    Label:
+        text: root.my_text
+        font_size: 45
+        size_hint: 1, .22
+    Label:
+        text: root.work
+        font_size: 40
+        size_hint: 1, .10
+
+    Button:
+        text: "Clear all"
+        on_press: root.on_button_clear_all()
+        size_hint: .5, .13
+        background_normal: ''
+        color: 0,0,0,1
+        background_color:(1,0,0,.80)
+    Button:
+        text: "delete"
+        on_press: root.on_button_delete()
+        size_hint: .25, .13
+        background_normal: ''
+        color: 0,0,0,1
+        background_color:(255/255,152/255,0,1)
+    Button:
+        text: "/"
+        on_press: root.on_button_divide()
+        size_hint: .25, .13
+        color: 0,0,0,1
+        background_normal: ''
+        background_color:(103/255,249/255,250/255,1)
+#row 3
+    Button:
+        size_hint: .25, .13
+        text: "7"
+        on_press: root.on_button_click7()
+    Button:
+        size_hint: .25, .13
+        text: "8"
+        on_press: root.on_button_click8()
+    Button:
+        size_hint: .25, .13
+        text: "9"
+        on_press: root.on_button_click9()
+    Button:
+        text: "x"
+        color: 0,0,0,1
+        on_press: root.on_button_x()
+        size_hint: .25, .13
+        background_normal: ''
+        background_color:(103/255,249/255,250/255,1)
+#row 4
+    Button:
+        text: "4"
+        size_hint: .25, .13
+        on_press: root.on_button_click4()
+    Button:
+        text: "5"
+        size_hint: .25, .13
+        on_press: root.on_button_click5()
+    Button:
+        text: "6"
+        size_hint: .25, .13
+        on_press: root.on_button_click6()
+    Button:
+        text: "-"
+        size_hint: .25, .13
+        color: 0,0,0,1
+        on_press: root.on_button_minus()
+        background_normal: ''
+        background_color:(103/255,249/255,250/255,1)
+#row 5
+    Button:
+        text: "1"
+        size_hint: .25, .13
+        on_press: root.on_button_click1()
+    Button:
+        text: "2"
+        size_hint: .25, .13
+        on_press: root.on_button_click2()
+    Button:
+        text: "3"
+        size_hint: .25, .13
+        on_press: root.on_button_click3()
+    Button:
+        text: "+"
+        on_press: root.on_button_plus()
+        size_hint: .25, .13
+        color: 0,0,0,1
+        background_normal: ''
+        background_color:(103/255,249/255,250/255,1)
+    #row final
+    Button:
+        text: "0"
+        size_hint: .5, .13
+        on_press: root.on_button_click0()
+    Button:
+        text: "."
+        on_press: root.on_button_dec()
+        size_hint: .25, .13
+    Button:
+        text: "="
+        on_press: root.on_button_equal()
+        size_hint: .25, .13
+        color: 0,0,0,1
+        background_normal: ''
+        background_color:(0/255,66/255,255/255,1)
